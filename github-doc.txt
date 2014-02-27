@@ -9,3 +9,8 @@
 # git commit -m "commit message"
 # git status
 # git push origin master
+
+
+## Revert last commit
+# git revert HEAD
+# git push origin master
