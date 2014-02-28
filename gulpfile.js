@@ -23,6 +23,6 @@ gulp.task('test', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(paths.scripts, ['test']);
+	gulp.watch(paths.scripts, ['lint','test']);
 });
 
