@@ -2,6 +2,7 @@
   "name": "five-in-a-row",
   "version": "0.1.0",
   "devDependencies": {
-    "gulp": "^3.5.2"
+    "gulp": "^3.5.2",
+    "gulp-qunit": "^0.2.1"
   }
 }
