@@ -1,2 +1,19 @@
-New content
-new test
+
+## Init
+git clone https://github.com/sehnpaa/five-in-a-row/
+cd five-in-a-row
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+# Configure vim as well
+
+
+# make changes to files
+git add .
+git status
+git commit -m "commit message"
+git status
+git push origin master
+
+# Revert last commit
+git revert HEAD
+git push origin master
