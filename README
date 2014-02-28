@@ -1,9 +1,14 @@
 
 ## Init
+# Git:
 git clone https://github.com/sehnpaa/five-in-a-row/
 cd five-in-a-row
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+# gulp.js
+npm install -g gulp
+npm install --save-dev gulp.js
+npm install --save-dev gulp-qunit
 # Configure vim
 
 
