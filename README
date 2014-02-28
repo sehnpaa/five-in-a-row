@@ -9,16 +9,16 @@ git config --global user.name "Your Name"
 
 ## Make changes 
 git pull
-## Edit files
+# Edit files
 git add .
 git status
 git commit -m "commit message"
 git status
-git push origin master
+git push -u origin master
 
 # Revert last commit
 git revert HEAD
 git push -u origin master
 
-# Delete file
+# Delete files
 git rm
