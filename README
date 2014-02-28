@@ -10,7 +10,8 @@ npm install -g gulp
 npm install --save-dev gulp.js
 npm install --save-dev gulp-jshint
 npm install --save-dev gulp-qunit
-# Configure vim
+# indent with 4 spaces, for instance with vim:   
+cp -n .vimrc ~/
 
 
 ## Make changes 
