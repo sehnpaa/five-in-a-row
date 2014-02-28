@@ -5,84 +5,42 @@ var module = {
         hej: "hej"
     },
     cells: [
-        [{
-            state: "white"
-        }, {
-            state: "black"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }],
-        [{
-            state: "white"
-        }, {
-            state: "black"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }],
-        [{
-            state: "white"
-        }, {
-            state: "black"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }],
-        [{
-            state: "white"
-        }, {
-            state: "black"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }],
-        [{
-            state: "white"
-        }, {
-            state: "black"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }],
-        [{
-            state: "white"
-        }, {
-            state: "black"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }, {
-            state: "white"
-        }]
+        [{ state: "white" },
+		 { state: "black" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" }],
+		[{ state: "white" },
+		 { state: "black" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" }],
+		[{ state: "white" },
+		 { state: "black" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" }],
+		[{ state: "white" },
+		 { state: "black" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" }],
+		[{ state: "white" },
+		 { state: "black" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" }],
+		[{ state: "white" },
+		 { state: "black" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" },
+		 { state: "white" }]
     ],
     initBoard: function () {
 
