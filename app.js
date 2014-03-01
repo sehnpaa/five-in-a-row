@@ -64,5 +64,3 @@ var module = {
 /*watch(module.cells, function () {
     module.updateDebugLog();
 });*/
-
-module.cells[0][0].state = "modified";
