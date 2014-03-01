@@ -11,6 +11,12 @@ var paths = {
 
 gulp.task('default', ['test', 'watch']);
 
+gulp.task('lint', function() {
+      gulp.src(paths.scripts)
+          .pipe(jshint())
+          .pipe(jshint.reporter('default'));
+});
+
 gulp.task('test', function () {
 	return gulp.src(paths.testRunner)
 		.pipe(qunit());
