@@ -9,7 +9,7 @@ var paths = {
 };
 
 
-gulp.task('default', ['test', 'watch']);
+gulp.task('default', ['lint', 'test', 'watch']);
 
 gulp.task('lint', function() {
       gulp.src(paths.scripts)

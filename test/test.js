@@ -1,4 +1,4 @@
-/*jshint undef:false */
+/*jshint indent: 4, undef: false */
 
 test("sanity check", function () {
     equal(4, 4);
@@ -7,6 +7,6 @@ test("sanity check", function () {
 eval();
 
 test("initBoard", function () {
-	module.initBoard();
-	equal(module.cells[0][0].state, "white", "first och first state is white");
+    module.initBoard();
+    equal(module.cells[0][0].state, "white", "first och first state is white");
 });
