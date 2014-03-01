@@ -9,13 +9,7 @@ var paths = {
 };
 
 
-gulp.task('default', ['lint', 'test', 'watch']);
-	
-gulp.task('lint', function () {
-	gulp.src(paths.scripts)
-		.pipe(jshint())
-		.pipe(jshint.reporter('default'));
-});
+gulp.task('default', ['test', 'watch']);
 
 gulp.task('test', function () {
 	return gulp.src(paths.testRunner)
@@ -23,6 +17,6 @@ gulp.task('test', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(paths.scripts, ['lint','test']);
+	gulp.watch(paths.scripts, ['test']);
 });
 
