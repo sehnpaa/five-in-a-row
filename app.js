@@ -61,6 +61,6 @@ var module = {
 };
 
 
-/*watch(module.cells, function () {
+watch(module.cells, function () {
     module.updateDebugLog();
-});*/
+});
