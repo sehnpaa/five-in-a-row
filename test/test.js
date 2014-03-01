@@ -1,3 +1,5 @@
+/*jshint undef:false */
+
 test("sanity check", function () {
     equal(4, 4);
 });
