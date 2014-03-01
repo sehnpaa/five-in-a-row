@@ -42,6 +42,29 @@ var module = {
          { state: "white" },
          { state: "white" }]
     ],
+    state: "whiteSelectCell",
+    setStateTo: function ( newState ) {
+        if ( module.isValidState( newState ) ) {
+            module.state = newState;
+        }
+    },
+    isValidState: function ( state ) {
+        var validInput = [
+            'whiteSelectCell',
+            'blackSelectCell'
+        ];
+        isValid = false;
+        var i;
+        for ( i = 0; i < validInput.length; i++ ) {
+            if ( state === validInput[i] ) {
+                isValid = true;
+                break;
+            }
+        }
+        if ( isValid === false ) {
+            throw "Invalid state: " + state;
+        }
+    },
     initBoard: function () {
 
     },
