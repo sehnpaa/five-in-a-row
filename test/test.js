@@ -8,5 +8,5 @@ eval();
 
 test("initBoard", function () {
     module.initBoard();
-    equal(module.cells[0][0].state, "white", "first och first state is white");
+    equal(module.cells[0][0].state, "white", "module.cells[0][0] is white");
 });
