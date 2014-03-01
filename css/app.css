@@ -1,0 +1,175 @@
+body {
+    background-color:yellow;
+    font-size:16px;
+    padding-left:20px;
+}
+.hidden {display:none;}
+h1 {
+    font-size:18px;
+}
+#t2 {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#resetbtn {
+    -moz-box-shadow:inset 1px 1px 0px 0px #f5978e;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #f5978e;
+    box-shadow:inset 1px 1px 0px 0px #f5978e;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(center top, #f24537 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+    background-color:#f24537;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0px;
+    border:1px solid #d02718;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    font-weight:bold;
+    font-style:normal;
+    height:30px;
+    line-height:30px;
+    width:85px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 2px #810e05;
+}
+#resetbtn:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+    background:-moz-linear-gradient(center top, #c62d1f 5%, #f24537 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+    background-color:#c62d1f;
+}
+#resetbtn:active {
+    position:relative;
+    top:1px; 
+}
+td {
+    border:1px dotted white;
+    text-align:center;
+    width:30px;
+    height:30px;
+}
+#t {
+    background-color:white;
+    padding:5px;
+    box-shadow: 3px 3px 5px #888888;
+}
+table {
+    border:3px ridge blue;
+    border-collapse:collapse;
+    background-color:white;
+    table-layout:fixed;
+}
+#s1 {
+    float:left;
+    background-color:#66CCFF;
+    width:90px;
+}
+#s2 {
+    background-color:#66CCFF;
+    width:90px;
+}
+#s3 {
+    float:left;
+    background-color:#66CCFF;
+}
+#s4 {
+    background-color:#66CCFF;
+}
+#blackwinner {
+    text-shadow:1px 1px #000000;
+}
+#whitewinner {
+    text-shadow:1px 1px #000000;
+}
+}
+.rotateTo0 {
+    transform:rotate(0deg);
+}
+.rotateTo90 {
+    transform:rotate(90deg);
+}
+.rotateTo180 {
+    transform:rotate(180deg);
+}
+.rotateTo270 {
+    transform:rotate(270deg);
+}
+.blackSelectCell {
+    background-color:#000000;
+}
+.whiteSelectCell {
+    background-color: #ffffff;
+}
+.arrow {
+    height: 0;
+    width: 0;
+    border: 12px solid transparent;
+}
+.arrow.left {
+    float:left;
+    border-top-color:solid transparent;
+    border-right-color:black;
+    border-left-color:solid transparent;
+    border-bottom-color:solid transparent;
+}
+.arrow.right {
+    float:right;
+    border-top-color:solid transparent;
+    border-right-color:solid transparent;
+    border-left-color:black;
+    border-bottom-color:solid transparent;
+}
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+blink {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+blink2 {
+    color:red;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 4;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 4;
+}
+#blackToPlay {
+    display: none;
+}
