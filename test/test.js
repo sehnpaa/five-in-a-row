@@ -1,10 +1,11 @@
 /*jshint indent: 4, undef: false */
 
+// Manually test if jshint runs:
+// eval();
+
 test("sanity check", function () {
     equal(4, 4);
 });
-
-eval();
 
 test("initBoard", function () {
     module.initBoard();
