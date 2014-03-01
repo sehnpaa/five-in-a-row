@@ -4,5 +4,6 @@
   "devDependencies": {
     "gulp": "^3.5.2",
     "gulp-qunit": "^0.2.1",
+    "gulp-jshint": "^1.5.0"
   }
 }
