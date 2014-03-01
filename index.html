@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="qunit/qunit.css">
-</head>
+<head></head>
 <body>
 
-<h1>My First Web Page</h1>
-testar
+<div id="log"></div><br>
+<div id="log2"></div>
+<table id="t">
+    <tr>
+        <td></td>
+        <td colspan="2">
+             <h1>FEM I RAD (with a twist)</h1>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id="arrow1">
+            <div class="arrow left"></div>
+            <div id="arrow2" class="arrow right"></div>
+        </td>
+        <td id="arrow2">
+            <div id="arrow3" class="arrow left"></div>
+            <div id="arrow4" class="arrow right"></div>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <table id="s1">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table id="s2">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <table id="s3">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table id="s4">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <div id="arrow5" class="arrow left"></div>
+            <div id="arrow6" class="arrow right"></div>
+        </td>
+        <td>
+            <div id="arrow7" class="arrow left"></div>
+            <div id="arrow8" class="arrow right"></div>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <center>
+                <div id="blackToPlay">&diams;</div>
+                <div id="whiteToPlay">&loz;</div>
+                <blink>Play</blink>
+                <br/>
+            </center>
+        </td>
+        <td></td>
+        <tr>
+            <td></td>
+            <td colspan="2"> <a id="resetbtn">Spela igen</a>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+</table>
+<div id="blackwinner" class="hidden"><b><blink2><font color="000000" size="15px">&diams;</font> <font color="red" size="15px">Winner!</font></blink2></b>
+
+</div>
+<div id="whitewinner" class="hidden"><b>
+   <blink2><font color="000000" size="15px">&loz;</font>
+       
+       <font color="red" size="15px">Winner!</font></blink2></b>
+
+</div>
 <script src="app.js"></script>
-<script src="qunit/qunit.js"></script>
 </body>
-</html> 
+</html>
