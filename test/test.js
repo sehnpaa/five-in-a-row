@@ -16,4 +16,9 @@ test("module.isValidGameState()", function () {
     equal(module.isValidGameState("whiteSelectCell"), true, "'whiteSelectCell' is a valid state");
 });
 
-
+test("module.setCellState() and module.getCellState()", function () {
+    module.setCellState(0, 0, "white");
+    equal(module.getCellState(0, 0), "white", "{set,get}CellState");
+    module.cells[2][1].state = "14mar2";
+    equal(module.getCellState(2, 1), "14mar2", "Set directly then getCellState()");
+});

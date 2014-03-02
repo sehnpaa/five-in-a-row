@@ -63,6 +63,12 @@ var module = {
         }
         return isValid;
     },
+    setCellState: function(x, y, state) {
+        module.cells[x][y].state = state;
+    },
+    getCellState: function(x, y, state) {
+        return module.cells[x][y].state;
+    },
     initBoard: function () {
 
     },
