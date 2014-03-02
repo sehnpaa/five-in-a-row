@@ -85,3 +85,9 @@ var module = {
 watch(module.cells, function () {
     module.updateDebugLog();
 });
+
+$(document).ready(function () {
+    $('td.cell').on('click', function () {
+
+    });
+});
