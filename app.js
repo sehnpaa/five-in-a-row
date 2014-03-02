@@ -61,9 +61,7 @@ var module = {
                 break;
             }
         }
-        if ( isValid === false ) {
-            throw new Error("Invalid state: " + state);
-        }
+        return isValid;
     },
     initBoard: function () {
 
