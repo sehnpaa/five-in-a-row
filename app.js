@@ -75,6 +75,13 @@ var module = {
     resetBoard: function () {
 
     },
+    setAllCellState: function (newState) {
+        for (var x in module.cells) {
+            for (var y in module.cells[x]) {
+               module.setCellState(x, y, newState);
+            }
+        }
+    },
     updateDebugLog: function () {
         var debug_log = $('#debug_log');
         debug_log.text('');

@@ -22,3 +22,11 @@ test("module.setCellState() and module.getCellState()", function () {
     module.cells[2][1].state = "14mar2";
     equal(module.getCellState(2, 1), "14mar2", "Set directly then getCellState()");
 });
+
+test("module.setAllCellState()", function () {
+    module.setAllCellState("black");
+    equal(module.getCellState(0, 0), "black", "getCellState(0,0)");
+    equal(module.getCellState(5, 1), "black", "getCellState(5,1)");
+    equal(module.getCellState(4, 3), "black", "getCellState(4,3)");
+    equal(module.getCellState(2, 2), "black", "getCellState(2,2)");
+});
