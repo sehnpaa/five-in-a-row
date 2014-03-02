@@ -11,7 +11,9 @@ test("module.initBoard", function () {
     equal(module.cells[0][0].state, "empty", "module.cells[0][0] is empty");
 });
 
-test("module.isValidState()", function () {
-    equal(module.isValidState("randomstring"), false, "'randomstring' is not a valid state");
-    equal(module.isValidState("whiteSelectCell"), true, "'whiteSelectCell' is a valid state");
+test("module.isValidGameState()", function () {
+    equal(module.isValidGameState("randomstring"), false, "'randomstring' is not a valid state");
+    equal(module.isValidGameState("whiteSelectCell"), true, "'whiteSelectCell' is a valid state");
 });
+
+

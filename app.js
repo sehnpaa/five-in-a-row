@@ -42,13 +42,13 @@ var module = {
          { state: "white" },
          { state: "white" }]
     ],
-    state: "whiteSelectCell",
-    setStateTo: function ( newState ) {
-        if ( module.isValidState( newState ) ) {
-            module.state = newState;
+    gameState: "whiteSelectCell",
+    setGameStateTo: function ( newState ) {
+        if ( module.isValidGameState( newState ) ) {
+            module.gameState = newState;
         }
     },
-    isValidState: function ( state ) {
+    isValidGameState: function ( state ) {
         var validInput = [
             'whiteSelectCell',
             'blackSelectCell'
