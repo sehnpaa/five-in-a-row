@@ -53,7 +53,7 @@ var module = {
             'whiteSelectCell',
             'blackSelectCell'
         ];
-        isValid = false;
+        var isValid = false;
         var i;
         for ( i = 0; i < validInput.length; i++ ) {
             if ( state === validInput[i] ) {
