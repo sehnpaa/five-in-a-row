@@ -5,7 +5,7 @@ var module = {
         hej: "hej"
     },
     cells: [
-        [{ state: "white" },
+        [{ state: "empty" },
          { state: "black" },
          { state: "white" },
          { state: "white" },
