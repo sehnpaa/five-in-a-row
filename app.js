@@ -70,7 +70,7 @@ var module = {
         return module.cells[x][y].state;
     },
     initBoard: function () {
-
+        module.setAllCellstate("empty");
     },
     setAllCellState: function (newState) {
         for (var x in module.cells) {
