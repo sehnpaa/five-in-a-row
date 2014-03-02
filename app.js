@@ -72,9 +72,6 @@ var module = {
     initBoard: function () {
 
     },
-    resetBoard: function () {
-
-    },
     setAllCellState: function (newState) {
         for (var x in module.cells) {
             for (var y in module.cells[x]) {
