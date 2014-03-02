@@ -11,3 +11,8 @@ test("initBoard", function () {
     module.initBoard();
     equal(module.cells[0][0].state, "white", "module.cells[0][0] is white");
 });
+
+test("module.isValidState()", function () {
+    equal(module.isValidState("randomstring"), false, "'randomstring' is not a valid state");
+    equal(module.isValidState("whiteSelectCell"), true, "'whiteSelectCell' is a valid state");
+});
