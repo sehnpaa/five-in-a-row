@@ -76,7 +76,7 @@ var module = {
 
     },
     updateDebugLog: function () {
-        debug_log = $('#debug_log');
+        var debug_log = $('#debug_log');
         debug_log.text('');
         for (var i in module.cells) {
             for (var j in module.cells[i]) {
