@@ -96,6 +96,9 @@ watch(module.cells, function () {
     module.updateDebugLog();
 });
 
+// Invoke/Trigger model
+callWatchers(module.cells);
+
 $(document).ready(function () {
     $('td.cell').on('click', function () {
 
