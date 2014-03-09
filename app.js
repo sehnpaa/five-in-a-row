@@ -63,11 +63,11 @@ var module = {
         }
         return isValid;
     },
-    setCellState: function(x, y, state) {
-        module.cells[x][y].state = state;
+    setCellState: function(row, column, state) {
+        module.cells[row][column].state = state;
     },
-    getCellState: function(x, y, state) {
-        return module.cells[x][y].state;
+    getCellState: function(row, column, state) {
+        return module.cells[row][column].state;
     },
     initBoard: function () {
         module.setAllCellstate("empty");
@@ -91,7 +91,6 @@ var module = {
     }
 };
 
-
 watch(module.cells, function () {
     module.updateDebugLog();
 });
@@ -101,6 +100,8 @@ callWatchers(module.cells);
 
 $(document).ready(function () {
     $('td.cell').on('click', function () {
-
+        var row = $(this).data('row');
+        var column = $(this).data('column');
+        alert(module.getCellState(row, column));
     });
 });
