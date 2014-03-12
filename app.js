@@ -1,4 +1,5 @@
 // Five-in-a-row  - with a twist (rewrite)
+/*jshint indent: 4, undef: false */
 
 var module = {
     board: {
@@ -75,7 +76,7 @@ var module = {
     setAllCellState: function (newState) {
         for (var x in module.cells) {
             for (var y in module.cells[x]) {
-               module.setCellState(x, y, newState);
+                module.setCellState(x, y, newState);
             }
         }
     },
