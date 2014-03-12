@@ -14,7 +14,8 @@ npm install --save-dev gulp-qunit
 # Configure vim
 
 
-## Make changes 
+## Make changes
+gulp # in another terminal
 git pull
 # Edit files
 git add .
