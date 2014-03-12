@@ -49,6 +49,9 @@ var module = {
             module.gameState = newState;
         }
     },
+    getGameState: function () {
+        return module.gameState;
+    },
     isValidGameState: function ( state ) {
         var validInput = [
             'whiteSelectCell',
