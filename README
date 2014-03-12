@@ -13,8 +13,10 @@ npm install --save-dev gulp-qunit
 # Configure vim
 
 
-## Make changes
 gulp # in another terminal
+python -m http.server # in another terminal
+firefox localhost:8000
+## Make changs
 git pull
 # Edit files
 git add .
