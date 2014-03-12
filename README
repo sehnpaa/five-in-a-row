@@ -11,7 +11,7 @@ npm install --save-dev gulp
 npm install --save-dev gulp-jshint
 npm install --save-dev gulp-qunit
 # Configure vim
-
+cp -i .vimrc ~/
 
 gulp # in another terminal
 python -m http.server # in another terminal
