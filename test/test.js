@@ -30,3 +30,15 @@ test("module.setAllCellState()", function () {
     equal(module.getCellState(4, 3), "black", "getCellState(4,3)");
     equal(module.getCellState(2, 2), "black", "getCellState(2,2)");
 });
+
+test("module.clickCell()", function () {
+    module.initBoard();
+    module.setGameStateTo("whiteSelectCell");
+    module.clickCell(2,0);
+    equal(module.getGameState(), "whiteRotateCells", "Change module.gamestate by clicking");
+});
+
+
+
+
+

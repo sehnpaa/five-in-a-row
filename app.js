@@ -55,7 +55,9 @@ var module = {
     isValidGameState: function ( state ) {
         var validInput = [
             'whiteSelectCell',
-            'blackSelectCell'
+            'whiteRotateCells',
+            'blackSelectCell',
+            'blackRotateCells'
         ];
         var isValid = false;
         var i;
@@ -67,6 +69,13 @@ var module = {
         }
         return isValid;
     },
+    setNextGameState: function () {
+        if (module.gameState === 'whiteSelectCell') {
+            module.gameState = 'whiteRotateCells';
+        }
+    },
+
+
     setCellState: function(row, column, state) {
         module.cells[row][column].state = state;
     },
@@ -74,7 +83,7 @@ var module = {
         return module.cells[row][column].state;
     },
     initBoard: function () {
-        module.setAllCellstate("empty");
+        module.setAllCellState("empty");
     },
     setAllCellState: function (newState) {
         for (var x in module.cells) {
@@ -82,6 +91,9 @@ var module = {
                 module.setCellState(x, y, newState);
             }
         }
+    },
+    clickCell: function (row, column) {
+        module.setNextGameState();
     },
     updateDebugLog: function () {
         var debug_log = $('#debug_log');
