@@ -1,0 +1,12 @@
+var module = {
+    cells: [],
+    gameState: "",
+    setGameStateTo: function () {},
+    isValidGateState: function () {},
+    setCellState: function () {},
+    getCellState: function () {},
+    setNextGameState: function () {},
+     
+    initBoard: function () {},
+    setAllCellState: function () {},
+    updateDebugLog: function () {},

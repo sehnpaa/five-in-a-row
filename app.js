@@ -79,7 +79,7 @@ var module = {
     setCellState: function(row, column, state) {
         module.cells[row][column].state = state;
     },
-    getCellState: function(row, column, state) {
+    getCellState: function(row, column) {
         return module.cells[row][column].state;
     },
     initBoard: function () {
@@ -93,7 +93,16 @@ var module = {
         }
     },
     clickCell: function (row, column) {
-        module.setNextGameState();
+        var player;
+        if (module.getGameState() === 'whiteSelectCell') {
+            player = 'white';
+        } else if (module.getGameState() === 'blackSelectCell') {
+            player = 'black';
+        }
+        if (module.getCellState(row, column) === 'empty') {
+            module.setCellState(row, column, player);
+            module.setNextGameState();
+        }
     },
     updateDebugLog: function () {
         var debug_log = $('#debug_log');
@@ -118,6 +127,6 @@ $(document).ready(function () {
     $('td.cell').on('click', function () {
         var row = $(this).data('row');
         var column = $(this).data('column');
-        alert(module.getCellState(row, column));
+        module.clickCell(row, column);
     });
 });
