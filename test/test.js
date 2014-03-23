@@ -34,7 +34,6 @@ test("module.setAllCellState()", function () {
 test("module.clickCell()", function () {
     module.initBoard();
     module.setGameStateTo("whiteSelectCell");
-    module.setCellState(2,0,'black');
     module.clickCell(2,0);
     equal(module.getGameState(), "whiteRotateCells", "Change module.gamestate by clicking");
 });
